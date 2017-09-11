@@ -7,7 +7,9 @@ class PigLatinizer
     letters = word.split("")
 
     if is_vowel?(letters[0])
-      letters.join += "way"
+      ordway = letters.join 
+      ordway += "way"
+      ordway
 
     else
       cons = []
