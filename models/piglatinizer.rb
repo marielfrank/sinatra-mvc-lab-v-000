@@ -1,4 +1,8 @@
 class PigLatinizer
+  def is_vowel?(letter)
+    ["a", "e", "i", "o", "u"].include?(letter)
+  end
+  
   def piglatinize(word)
     letters = word.split("")
 
@@ -14,10 +18,6 @@ class PigLatinizer
       ordway = letters[i..-1] + cons
       ordway.join += "ay"
     end
-  end
-
-  def is_vowel?(letter)
-    ["a", "e", "i", "o", "u"].include?(letter)
   end
 
   def to_pig_latin(phrase)
