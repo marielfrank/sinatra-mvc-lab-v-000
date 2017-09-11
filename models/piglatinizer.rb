@@ -6,12 +6,12 @@ class PigLatinizer
   def piglatinize(word)
     letters = word.split("")
 
-    if letters[0].is_vowel?
+    if is_vowel?(letters[0])
       letters.join += "way"
     else
       cons = letters[0]
       i = letters[0]
-      until !!i.is_vowel?
+      until !!is_vowel?(i)
         cons << i
         i += 1
       end
