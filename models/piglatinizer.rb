@@ -2,9 +2,14 @@ class PigLatinizer
   def piglatinize(word)
     letters = word.split("")
 
-    if letters[0].include?('/[aeiou]/')
+    if letters[0]
       letters.join += "way"
-    word
+    elsif !letters[]
+      
+  end
+
+  def is_vowel?(letter)
+    ("a", "e", "i", "o", "u").include?(letter)
   end
 
   def to_pig_latin(phrase)
