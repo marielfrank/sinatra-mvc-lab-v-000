@@ -1,6 +1,6 @@
 class PigLatinizer
   def piglatinize(word)
-    if word[0].include?(/[aeiou]/)
+    if word[0].include?('/[aeiou]/')
       word += "yay"
     end
     word
