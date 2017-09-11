@@ -10,7 +10,7 @@ class PigLatinizer
       letters.join += "way"
     else
       cons = letters[0]
-      i = letters[0]
+      i = 0
       until !!is_vowel?(letters[i])
         cons << letters[i]
         i += 1
