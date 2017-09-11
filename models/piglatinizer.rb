@@ -12,7 +12,7 @@ class PigLatinizer
       cons = letters[0]
       i = letters[0]
       until !!is_vowel?(letters[i])
-        cons << i
+        cons << letters[i]
         i += 1
       end
       ordway = letters[i..-1] + cons
