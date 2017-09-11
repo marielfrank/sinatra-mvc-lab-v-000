@@ -8,14 +8,16 @@ class PigLatinizer
 
     if is_vowel?(letters[0])
       letters.join += "way"
+      
     else
       cons = []
       i = 0
       until is_vowel?(letters[i])
+        binding.pry
         cons << letters[i]
         i += 1
       end
-      # binding.pry
+      
       ordway = (letters[i..-1] + cons).join
       ordway += "ay"
     end
