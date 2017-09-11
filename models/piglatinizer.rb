@@ -13,6 +13,7 @@ class PigLatinizer
       end
       ordway = letters[i..-1] + cons
       ordway.join += "ay"
+    end
   end
 
   def is_vowel?(letter)
