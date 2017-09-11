@@ -15,6 +15,7 @@ class PigLatinizer
         cons << letters[i]
         i += 1
       end
+      binding.pry
       ordway = letters[i..-1] + cons
       ordway.join += "ay"
     end
