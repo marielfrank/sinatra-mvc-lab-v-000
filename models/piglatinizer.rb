@@ -13,7 +13,7 @@ class PigLatinizer
       cons = []
       i = 0
       until is_vowel?(letters[i])
-        binding.pry
+        # binding.pry
         cons << letters[i]
         i += 1
       end
