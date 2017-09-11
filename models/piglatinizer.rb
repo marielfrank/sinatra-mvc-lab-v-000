@@ -11,7 +11,7 @@ class PigLatinizer
     else
       cons = letters[0]
       i = letters[0]
-      until !!is_vowel?(i)
+      until !!is_vowel?(letters[i])
         cons << i
         i += 1
       end
