@@ -1,6 +1,6 @@
 class PigLatinizer
   def is_vowel?(letter)
-    ["a", "e", "i", "o", "u"].include?(letter)
+    ["a", "e", "i", "o", "u"].include?(letter.downcase)
   end
 
   def piglatinize(word)
@@ -8,7 +8,7 @@ class PigLatinizer
 
     if is_vowel?(letters[0])
       letters.join += "way"
-      
+
     else
       cons = []
       i = 0
@@ -17,7 +17,7 @@ class PigLatinizer
         cons << letters[i]
         i += 1
       end
-      
+
       ordway = (letters[i..-1] + cons).join
       ordway += "ay"
     end
